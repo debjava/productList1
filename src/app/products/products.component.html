@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<div>
+
+    <h1>This is {{pageTitle}} </h1>
+
+    <table border="1 px">
+        <tbody>
+            <tr *ngFor="let product of products">
+              <td>{{ product.productName }}</td>
+              <td>{{ product.productCode }}</td>
+              <td>{{ product.releaseDate }}</td>
+              <td>{{ product.price }}</td>
+              <td>{{ product.starRating }}</td>
+            </tr>
+          </tbody>
+
+    </table>
+</div>

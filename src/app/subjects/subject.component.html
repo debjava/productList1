@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<div>
+    <h1>{{messageToDisplay}}</h1>
+    <div>
+        <table border="1 px">
+            <thead>
+                <th>ID</th>
+                <th>Subject</th>
+            </thead>
+            <tr *ngFor="let subject of coreSubjects">
+                <td>{{subject.subjectId}}</td>
+                <td>{{subject.subjectName}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
